@@ -7,7 +7,13 @@
 
 import SwiftUI
 
+
 struct TabBarView: View {
+    
+    init() {
+        UITabBar.appearance().barTintColor = UIColor(Color.backGroundColorTabBar)
+        UITabBar.appearance().backgroundColor = UIColor(Color.backGroundColorTabBar)
+    }
     
     var body: some View {
         
@@ -18,12 +24,19 @@ struct TabBarView: View {
                     Label("List", systemImage:"list.star")
                 }
             
+            SearchToAPIView()
+                .tabItem {
+                    Label("Search", systemImage: "magnifyingglass")
+                }
+            
             BackUpView()
                 .tabItem{
                     Label("BackUp", systemImage: "goforward")
                 }
             
         }
+        .accentColor(Color.textColorTabBar)
+        
 
     }
 }
