@@ -14,7 +14,7 @@
 		9FD7459628AB8C77004CD468 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD7459528AB8C77004CD468 /* TabBarView.swift */; };
 		9FD7459828ACC648004CD468 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD7459728ACC648004CD468 /* ListView.swift */; };
 		9FD7459A28ACC78D004CD468 /* BackUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD7459928ACC78D004CD468 /* BackUpView.swift */; };
-		9FD7459C28B0C084004CD468 /* SearchToAPIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD7459B28B0C084004CD468 /* SearchToAPIView.swift */; };
+		9FD7459C28B0C084004CD468 /* SearchToIMDbAPIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD7459B28B0C084004CD468 /* SearchToIMDbAPIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +26,7 @@
 		9FD7459528AB8C77004CD468 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		9FD7459728ACC648004CD468 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		9FD7459928ACC78D004CD468 /* BackUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackUpView.swift; sourceTree = "<group>"; };
-		9FD7459B28B0C084004CD468 /* SearchToAPIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchToAPIView.swift; sourceTree = "<group>"; };
+		9FD7459B28B0C084004CD468 /* SearchToIMDbAPIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchToIMDbAPIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,7 @@
 				9FD7459528AB8C77004CD468 /* TabBarView.swift */,
 				9FD7459728ACC648004CD468 /* ListView.swift */,
 				9FD7459928ACC78D004CD468 /* BackUpView.swift */,
-				9FD7459B28B0C084004CD468 /* SearchToAPIView.swift */,
+				9FD7459B28B0C084004CD468 /* SearchToIMDbAPIView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FC627C828B213120082E1C9 /* MoviesListColor.swift in Sources */,
-				9FD7459C28B0C084004CD468 /* SearchToAPIView.swift in Sources */,
+				9FD7459C28B0C084004CD468 /* SearchToIMDbAPIView.swift in Sources */,
 				9FD7459A28ACC78D004CD468 /* BackUpView.swift in Sources */,
 				9FD7459628AB8C77004CD468 /* TabBarView.swift in Sources */,
 				9FD7458728AB8024004CD468 /* Movie_ListApp.swift in Sources */,

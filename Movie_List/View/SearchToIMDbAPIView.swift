@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SearchToAPIView: View {
+struct SearchToIMDbAPIView: View {
     
     @State private var searchText = ""
     var body: some View {
@@ -23,6 +23,6 @@ struct SearchToAPIView: View {
 
 struct SearchToAPIView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchToAPIView()
+        SearchToIMDbAPIView()
     }
 }
