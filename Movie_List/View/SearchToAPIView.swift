@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct SearchToAPIView: View {
+    
+    @State private var searchText = ""
     var body: some View {
-        Text("Search")
+        
+        NavigationView {
+            Text("Search for \(searchText)")
+                .searchable(text: $searchText)
+                .navigationTitle("Search to IMDB")
+            
+        }
     }
 }
 
