@@ -9,46 +9,18 @@ import SwiftUI
 
 struct SearchToIMDbAPiList: View {
     
-    @State private var searchText = ""
     @State var searchQuery: String = ""
-    var movieTitleSearchList = [MovieO]()
     @State var movieListTitle = [MovieObject]()
     let loadData = LoadData()
     var apikey = "89155805"
-    @State private var showingAlert = false
+    
     
     var body: some View {
-        
-        
-        //
-        //        VStack {
-        //            TextField(" Enter Title movie", text: self.$searchQuery)
-        //                .padding(30)
-        //                .multilineTextAlignment(.center)
-        //            Button(action: {
-        //                self.fetchTitleMovie()
-        //            }, label: {
-        //                Text("Serach")
-        //                    .fontWeight(.bold)
-        //                    .foregroundColor(.white)
-        //                    .padding(20)
-        //                    .padding([.leading, .trailing], 30)
-        //            })
-        //            .background(Color.blue)
-        //            .cornerRadius(15)
         
         
         NavigationView {
             
             HStack {
-                //                    Text("Search for ")
-                //                        .searchable(text: $searchQuery)
-                //
-                //                        .onSubmit(of: .search){
-                //                            self.fetchTitleMovie()
-                //                        }
-                //
-                //                        .navigationTitle("Search to IMDB")
                 
                 
                 List {
@@ -80,72 +52,7 @@ struct SearchToIMDbAPiList: View {
             
             
         }
-        
-        //        NavigationView {
-        //
-        ////            HStack {
-        ////                Text("Search for \(searchText)")
-        ////                    .searchable(text: $searchText)
-        ////                    .onSubmit {
-        ////                        print("Search")
-        ////                    }
-        ////                    .navigationTitle("Search to IMDB")
-        ////
-        ////                Button {
-        ////
-        ////                } label: {
-        ////                    Text("OK")
-        ////                }
-        ////
-        ////            }
-        //
-        //
-        //            TextField(" Enter Title movie", text: self.$searchQuery)
-        //                .padding(30)
-        //                .multilineTextAlignment(.center)
-        //            Button(action: {
-        //                self.fetchTitleMovie()
-        //            }, label: {
-        //                Text("Serach")
-        //                    .fontWeight(.bold)
-        //                    .foregroundColor(.white)
-        //                    .padding(20)
-        //                    .padding([.leading, .trailing], 30)
-        //            })
-        //            .background(Color.blue)
-        //            .cornerRadius(15)
-        //
-        //
-        //
-        //            List {
-        //
-        //                ForEach(movieListTitle, id: \.imdbID) { movie in
-        //
-        //
-        //                    NavigationLink {
-        //
-        //                       MovieDetailToIMDbApi()
-        //
-        //                    } label: {
-        //
-        //                        SearchToIMDbAPiRow(movie: movie)
-        //                    }
-        //
-        //                }
-        //            }
-        //            //            .searchable(text: $searchText) {
-        //            //
-        //            //            }
-        //            //.navigationTitle("Search To imdb")
-        //            //.searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
-        //            //.searchable(text: $searchText)
-        //            //.searchable(text: $searchText, placement: .toolbar, prompt: String)
-        //            .navigationBarTitle("Search To imdb", displayMode: .large)
-        //
-        //        }
-        //        .onAppear(){
-        //            //loadData.fetchTitleMovie()
-        //        }
+
         
     }
     
@@ -175,9 +82,6 @@ struct SearchToIMDbAPiList: View {
                         }
             } catch {
 
-//                alert("Error", isPresented: $showingAlert) {
-//                    Button("Ok", role: .cancel){}
-//                }
                 print(error)
                 
             }
