@@ -24,7 +24,7 @@ struct TabBarView: View {
                     Label("List", systemImage:"list.star")
                 }
             
-            SearchToIMDbAPIView()
+            SearchToIMDbAPiList()
                 .tabItem {
                     Label("Search", systemImage: "magnifyingglass")
                 }
