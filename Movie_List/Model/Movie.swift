@@ -7,17 +7,6 @@
 
 import Foundation
 
-//struct IMDBSearchTitleResponse: Decodable {
-//    let SearchTitle: [MovieO]
-//}
-//
-//struct MovieO: Decodable {
-//    let Title: String
-//    let Year: String
-//    let imdbID: String
-//    let `Type`: String
-//    let Poster: String
-//}
 
 struct IMDBSearchResponse: Decodable {
     let Search: [MovieObject]
