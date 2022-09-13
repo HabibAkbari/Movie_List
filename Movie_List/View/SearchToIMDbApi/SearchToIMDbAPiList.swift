@@ -27,7 +27,6 @@ struct SearchToIMDbAPiList: View {
                     
                     ForEach(movieListTitle, id: \.imdbID) { movie in
                         
-                        
                         NavigationLink {
                             
                             MovieDetailToIMDbApi()
@@ -41,15 +40,13 @@ struct SearchToIMDbAPiList: View {
                 }
                 
             }
-            .searchable(text: $searchQuery)
             
+            .searchable(text: $searchQuery)
             .onSubmit(of: .search){
                 self.fetchTitleMovie()
             }
             
             .navigationTitle("Search to IMDB")
-            
-            
             
         }
 
